@@ -283,7 +283,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPSTR /*lpC
     while(isRunning)
     {
         MSG msg = {};
-        while(PeekMessageW(&msg, 0, 0, 0, PM_REMOVE))
+        while(PeekMessageW(&msg, 0, 0, 0, PM_REMOVE)) 
         {
             if(msg.message == WM_QUIT)
                 isRunning = false;
